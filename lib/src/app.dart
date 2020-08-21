@@ -1,3 +1,4 @@
+import 'package:final_round/src/ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/router.dart';
@@ -17,8 +18,9 @@ class _AppState extends State<App> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ScrollDemo',
-      onGenerateRoute: Router.generateRoute,
-      initialRoute: initialRoute,
+      home: HomeScreen(),
+//      onGenerateRoute: Router.generateRoute,
+//      initialRoute: initialRoute,
       theme: ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
